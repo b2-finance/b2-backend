@@ -5,6 +5,7 @@ import { LogModule } from 'src/log/log.module';
 import { AuthJwtModule } from 'src/auth/jwt/auth-jwt.module';
 import { AuthSessionModule } from 'src/auth/session/auth-session.module';
 import { AppController } from './app.controller';
+import { ProfileModule } from 'src/profile/profile.module';
 
 @Module({
   imports: [
@@ -30,7 +31,8 @@ import { AppController } from './app.controller';
     }),
     LogModule,
     AuthJwtModule,
-    AuthSessionModule
+    AuthSessionModule,
+    ProfileModule
   ],
   controllers: [AppController]
 })
